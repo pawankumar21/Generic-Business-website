@@ -1,0 +1,126 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.mainframe{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100vh;
+    gap: 2px;
+}
+.header{
+    background: #27374D;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: white;
+    text-align: center;
+}
+.leftGrid{
+    background: #526D82;
+    display: flex;
+    flex-direction: column;
+}
+.leftGrid>div{
+    border-bottom: 1px solid white;
+    height: 40px;
+    padding: 3px;
+    color: white;
+}
+.rightGrid{
+    background: #526D82;
+    display: flex;
+    flex-direction: column;
+}
+.rightGrid>div{
+    border-bottom: 1px solid white;
+    height: 40px;
+    padding: 3px;
+    color: white;
+}
+.centerGrid{
+    background: #DDE6ED;
+    display: flex;
+    flex-direction: column;
+}
+.centerGrid>h3{
+    text-align: center;
+}
+.centerGrid>p{
+    padding: 5px;
+    text-align: justify;
+}
+.footer{
+    background: #27374D;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: white;
+    text-align: center;
+}
+@media(max-width:700px){
+    .mainframe{
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr 1fr;
+        height: 100vh;
+    }
+    .header{
+        background: #79E0EE;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color: white;
+        text-align: center;
+    }
+    .leftGrid{
+        background: #ACB1D6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .leftGrid>div{
+        border: 1px solid ;
+        color:#ffffff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightGrid{
+        background: #ACB1D6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .rightGrid>div{
+        border: 1px solid ;
+        color:#ffffff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .centerGrid{
+        background:white;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .centerGrid>h3{
+        text-align: center;
+    }
+    .centerGrid>p{
+        padding: 10px;
+        text-align: justify;
+    }
+    .footer{
+        background: #79E0EE;
+
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color: white;
+        text-align: center;
+        grid-row-start: 5;
+    }
+}
